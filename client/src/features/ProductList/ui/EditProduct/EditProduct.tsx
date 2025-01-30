@@ -2,7 +2,6 @@ import {
   Heading,
   HStack,
   Text,
-  Button,
   Box,
   Textarea,
   createListCollection,
@@ -35,6 +34,7 @@ import { RequiredMark } from "@/shared/components/RequiredMark";
 import { useEffect, useState } from "react";
 import { useDispatchDelete } from "../../lib/hooks/useDispatchDelete";
 import { useDispatchEdit } from "../../lib/hooks/useDispatchEdit";
+import { Button as CustomButton } from "../../../../shared/components/Button";
 
 export const EditProduct = () => {
   const navigate = useNavigate();
@@ -172,6 +172,7 @@ export const EditProduct = () => {
         </GridItem>
         <GridItem>
           <SelectRoot
+            backgroundColor="white"
             w="500px"
             collection={selectorVariants}
             value={packageType}
@@ -194,6 +195,7 @@ export const EditProduct = () => {
         </GridItem>
         <GridItem justifySelf="start">
           <Checkbox
+            backgroundColor="white"
             size="lg"
             ml="15px"
             checked={isArchived}
@@ -206,6 +208,7 @@ export const EditProduct = () => {
         </GridItem>
         <GridItem>
           <Textarea
+            backgroundColor="white"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             placeholder="..."
@@ -221,7 +224,7 @@ export const EditProduct = () => {
           key={"delete"}
         >
           <PopoverTrigger asChild>
-            <Button red>Удалить</Button>
+            <CustomButton red>Удалить</CustomButton>
           </PopoverTrigger>
           <PopoverContent
             left="50%"
@@ -233,19 +236,19 @@ export const EditProduct = () => {
             <PopoverArrow />
             <PopoverBody>
               {`Подтвердите удаление `}
-              <Button mt="10px" black w="130px" onClick={handleDelete}>
+              <CustomButton mt="10px" black w="200px" onClick={handleDelete}>
                 Подтвердить
-              </Button>
+              </CustomButton>
             </PopoverBody>
           </PopoverContent>
         </PopoverRoot>
 
-        <Button black onClick={handleQuit}>
+        <CustomButton black onClick={handleQuit}>
           Закрыть
-        </Button>
-        <Button yellow onClick={handleSave}>
+        </CustomButton>
+        <CustomButton yellow onClick={handleSave}>
           Сохранить
-        </Button>
+        </CustomButton>
       </HStack>
     </Box>
   );

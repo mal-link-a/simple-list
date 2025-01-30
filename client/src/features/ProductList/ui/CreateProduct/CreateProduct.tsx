@@ -27,6 +27,7 @@ import { RequiredMark } from "@/shared/components/RequiredMark";
 import { useState } from "react";
 import { useDispatchCreate } from "../../lib/hooks/useDispatchCreate";
 import { toaster } from "@/components/ui/toaster";
+import { Button as CustomButton } from "../../../../shared/components/Button";
 
 export const CreateProduct = () => {
   const navigate = useNavigate();
@@ -128,6 +129,7 @@ export const CreateProduct = () => {
         </GridItem>
         <GridItem justifySelf="start">
           <Checkbox
+            backgroundColor="white"
             colorPalette="blue"
             size="lg"
             ml="15px"
@@ -150,12 +152,12 @@ export const CreateProduct = () => {
       </Grid>
 
       <HStack justifyContent="center">
-        <Button black onClick={handleQuit}>
+        <CustomButton black onClick={handleQuit}>
           Закрыть
-        </Button>
-        <Button yellow onClick={handleCreate}>
+        </CustomButton>
+        <CustomButton yellow onClick={handleCreate}>
           Создать
-        </Button>
+        </CustomButton>
       </HStack>
     </Box>
   );

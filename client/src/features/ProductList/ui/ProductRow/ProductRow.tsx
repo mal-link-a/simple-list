@@ -15,6 +15,7 @@ import { setIndex, deleteProduct } from "../../lib/productSlice";
 import { IconInfo } from "@/shared/components/IconInfo";
 import { IconDelete } from "@/shared/components/IconDelete";
 import { IconEdit } from "@/shared/components/IconEdit";
+import { Button as CustomButton } from "../../../../shared/components/Button";
 
 interface TableRowProps {
   packsNumber: number;
@@ -89,9 +90,9 @@ export const ProductRow = ({
               <PopoverArrow />
               <PopoverBody>
                 {`Подтвердите удаление `}
-                <Button mt="10px" black w="130px" onClick={handleDelete}>
+                <CustomButton mt="10px" black w="200px" onClick={handleDelete}>
                   Подтвердить
-                </Button>
+                </CustomButton>
               </PopoverBody>
             </PopoverContent>
           </PopoverRoot>

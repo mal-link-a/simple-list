@@ -4,6 +4,8 @@ export const buttonRecipe = defineRecipe({
   variants: {
     yellow: {
       true: {
+        paddingLeft: "20px",
+        paddingRight: "20px",
         border: "1px solid black",
         borderRadius: "10px",
         fontSize: "18px",
@@ -18,6 +20,8 @@ export const buttonRecipe = defineRecipe({
     },
     red: {
       true: {
+        paddingLeft: "20px",
+        paddingRight: "20px",
         border: "1px solid black",
         borderRadius: "10px",
         fontSize: "18px",
@@ -32,6 +36,8 @@ export const buttonRecipe = defineRecipe({
     },
     black: {
       true: {
+        paddingLeft: "20px",
+        paddingRight: "20px",
         border: "1px solid black",
         borderRadius: "10px",
         fontSize: "18px",

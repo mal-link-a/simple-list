@@ -1,4 +1,4 @@
-import { Box, Button, Heading, HStack } from "@chakra-ui/react";
+import { Box, Heading, HStack } from "@chakra-ui/react";
 import { Table } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -8,6 +8,7 @@ import { useNavigate } from "react-router";
 import { api } from "../../lib/api";
 
 import { ProductRow } from "../ProductRow/ProductRow";
+import { Button as CustomButton } from "../../../../shared/components/Button";
 
 export const ProductList = () => {
   const navigate = useNavigate();
@@ -38,9 +39,9 @@ export const ProductList = () => {
         >
           Список выпускаемой продукции
         </Heading>
-        <Button yellow onClick={handleCreate}>
+        <CustomButton yellow onClick={handleCreate}>
           Создать тип продукции
-        </Button>
+        </CustomButton>
       </HStack>
       <Table.Root
         fontFamily="Montserrat"
