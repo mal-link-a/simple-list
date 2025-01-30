@@ -1,7 +1,7 @@
 Простой лист
 
 Запуск сервера:
-1)cd api
+1) cd api
 2) npm i
 3) npm start
 
