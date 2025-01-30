@@ -44,6 +44,7 @@ export const ProductList = () => {
         </CustomButton>
       </HStack>
       <Table.Root
+        overflow="visible"
         fontFamily="Montserrat"
         variant="outline"
         showColumnBorder
