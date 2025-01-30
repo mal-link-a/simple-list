@@ -1,27 +1,28 @@
 {
   "productTypes": [
     {
-      "id": "KatJDS1",
-      "packsNumber": 24,
-      "packageType": "компрессия",
-      "isArchived": true,
-      "description": "Описание продукции\nВ несколько строк",
-      "createdAt": "2024-02-01T16:08:24.630Z"
-    },
-    {
-      "id": "2Pj88FE",
-      "packsNumber": 12,
+      "packsNumber": 2,
       "packageType": "некомпрессия",
       "isArchived": false,
-      "createdAt": "2024-01-25T16:08:24.630Z"
+      "description": "Тест 2",
+      "createdAt": "2022-01-29T23:08:05.405Z",
+      "id": "232V9ln"
     },
     {
-      "id": "3s-oN_s",
-      "packsNumber": 20,
-      "packageType": "компрессия",
+      "packsNumber": 6,
+      "packageType": "некомпрессия",
       "isArchived": false,
-      "description": "Описание продукции\nВ несколько строк",
-      "createdAt": "2024-01-23T16:08:24.630Z"
+      "description": "12342335",
+      "createdAt": "2022-01-29T23:08:05.405Z",
+      "id": "732V9ln"
+    },
+    {
+      "packsNumber": 19,
+      "packageType": "компрессия",
+      "isArchived": true,
+      "description": "123",
+      "createdAt": "2025-01-30T16:32:07.550Z",
+      "id": "eAs6DDW"
     }
   ]
 }
